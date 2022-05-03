@@ -1,0 +1,67 @@
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jemoji
+
+
+title: "Christian Galliano | Blog"
+masthead_title: "Just Another"
+subtitle: "Blog about programming, soft & hard skills"
+logo: "/assets/images/logo.png"
+email: christian@galliano.info
+description: >- # this means to ignore newlines until "baseurl:"
+  A personal blog about programming, soft & hard skills.
+baseurl: ""
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+breadcrumbs: false
+
+comments:
+  provider: "facebook"
+
+author_profile: true
+author:
+  name: "Christian Galliano"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "PHP Technical Lead інженер в <a href='https://autoline.info/about.php' target='_blank'><b>Linemedia</b></a>. Займаюсь програмуванням 7+ років.\n\n
+    Завів блог, щоб шейрити tips & tricks з друзями та колегами ;)"
+  links:
+    -   label: "Email"
+        icon: "fas fa-fw fa-envelope-square"
+        url: "mailto:christian@galliano.info"
+    -   label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/ChrisGalliano"
+    -   label: "LinkedIn"
+        icon: "fab fa-fw fa-linkedin"
+        url: "https://www.linkedin.com/in/chris-galliano/"
+    -   label: "Instagram"
+        icon: "fab fa-fw fa-instagram"
+        url: "https://www.instagram.com/chris_galliano/"
+
+include:
+  - _pages
+
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      comments: true
+      share: true
+      related: true
+      show_date: true
+      author_profile: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
