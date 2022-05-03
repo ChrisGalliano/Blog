@@ -15,8 +15,8 @@ logo: "/assets/images/logo.png"
 email: christian@galliano.info
 description: >- # this means to ignore newlines until "baseurl:"
   A personal blog about programming, soft & hard skills.
-baseurl: ""
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Blog"
+url: "https://chrisgalliano.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "ChrisGalliano/Blog"
 breadcrumbs: false
 
