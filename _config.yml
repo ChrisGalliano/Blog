@@ -1,4 +1,5 @@
 theme: minimal-mistakes-jekyll
+destination: ./docs
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
